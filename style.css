@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background:
+    linear-gradient(
+        135deg,
+        #ff9a9e,
+        #fad0c4
+    );
+
+    overflow: hidden;
+}
+
+.page {
+
+    width: 100vw;
+    height: 100vh;
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+.active {
+
+    display: flex;
+}
+
+.glass-card {
+
+    background:
+        rgba(255,255,255,0.2);
+
+    backdrop-filter: blur(10px);
+
+    padding: 40px;
+
+    border-radius: 25px;
+
+    max-width: 700px;
+
+    width: 90%;
+
+    box-shadow:
+        0 8px 32px rgba(0,0,0,0.15);
+}
+
+h1,h2,h3,p {
+
+    color: white;
+    margin-bottom: 20px;
+}
+
+button {
+
+    padding: 15px 30px;
+
+    margin: 10px;
+
+    border: none;
+
+    border-radius: 50px;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    background: white;
+
+    transition: .3s;
+}
+
+button:hover {
+
+    transform: scale(1.05);
+}
+
+.photo {
+
+    width: 320px;
+    height: 320px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    object-position: center 15%;
+
+    border: 6px solid white;
+
+    margin-bottom: 20px;
+}
+
+.finalText {
+
+    line-height: 1.8;
+    font-size: 20px;
+}
+
+#musicBtn {
+
+    position: fixed;
+
+    top: 20px;
+    right: 20px;
+
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+
+    z-index: 999;
+}
+
+.heart {
+
+    position: fixed;
+
+    bottom: -50px;
+
+    font-size: 24px;
+
+    animation: rise 6s linear forwards;
+}
+
+@keyframes rise {
+
+    from {
+
+        transform:
+            translateY(0);
+    }
+
+    to {
+
+        transform:
+            translateY(-120vh);
+
+        opacity: 0;
+    }
+}
